@@ -1,105 +1,77 @@
 # ABHIJAY KUMAR SHAH
 
-**Location:** Singrauli - 486886 (MP), India  
+Singrauli - 486886 (MP), India  
 **Phone:** +91 7879028316  
-**Email:** abhijayshah74@gmail.com  
-**GitHub:** [github.com/Abhijayshah](https://github.com/Abhijayshah)  
+**Email:** [abhijayshah74@gmail.com](mailto:abhijayshah74@gmail.com)  
+**GitHub:** [Abhijayshah](https://github.com/Abhijayshah)  
 **Portfolio:** [abhijayshah.online](https://abhijayshah.online)  
-**LinkedIn:** [linkedin.com/in/abhijay-shah-75a5a7251](https://www.linkedin.com/in/abhijay-shah-75a5a7251/)
+**LinkedIn:** [Abhijay Shah](https://www.linkedin.com/in/abhijay-shah-75a5a7251/)  
 
 ---
 
 ## EDUCATION
 
-**VELLORE INSTITUTE OF TECHNOLOGY (VIT)** | Bhopal, India  
+**VELLORE INSTITUTE OF TECHNOLOGY (VIT)**  
 *Bachelor of Technology in Computer Science Engineering*  
-**CGPA:** 8.43/10 | **Expected Graduation:** May 2026
+Expected May 2026  
+Cumulative GPA: 8.43/10
 
-**DAV PUBLIC SCHOOL, DUDHICHUA** | Singrauli, India  
-*Senior Secondary (Class XII)*  
-**CGPA** 9.2 | **2019 – 2021**
+**DAV PUBLIC SCHOOL, DUDHICHUA**  
+2019 – 2021 | Singrauli, India  
+Senior Secondary (Class XII)  
+CGPA: 9.20
 
-**DAV PUBLIC SCHOOL, SURYA VIHAR** | Singrauli, India  
-*Secondary (Class X)*  
-**CGPA** 9.85 | **2018 – 2019**
+**DAV PUBLIC SCHOOL, SURYA VIHAR**  
+2018 – 2019 | Singrauli, India  
+Secondary (Class X)  
+CGPA: 9.85
 
 ---
 
 ## TECHNICAL SKILLS
 
-**Languages:** C++, Python, Java, HTML, CSS, JavaScript, MySQL, MongoDB, PostgreSQL  
-**Frameworks:** React.js, Node.js, Express.js  
-**Developer Tools:** Git, GitHub, Visual Studio Code
+- **Languages:** C++, Python, Java, HTML, CSS, JavaScript, MySQL, MongoDB, PostgreSQL  
+- **Frameworks:** React.js, Node.js, Express.js  
+- **Developer Tools:** Git, GitHub, Visual Studio Code  
 
 ---
 
 ## PROJECTS
 
-### FULLSTACK STORE RATING PLATFORM
-**Technologies:** React.js, Express.js, PostgreSQL  
-**GitHub:** [Store-Rating-Platform](https://github.com/Abhijayshah/Store-Rating-Platform.git) | **Aug 2025**
+**CAT CATCH CODE**  
+[Live: catcatchcode.online](https://catcatchcode.online) | 2025 – Ongoing  
+- Built an educational platform inspired by GFG & JavaTpoint to help college students learn DSA and Development through short, easy explanations.  
+- Created separate modules — Cat_Catch_DSA & Cat_Catch_Development — and currently merging them into a full MERN-based platform offering roadmaps, AI-assisted learning, and beginner-friendly project guidance.  
+_Technologies: HTML/CSS/JS, MERN (in progress)_  
 
-- Developed a role-based full-stack store rating app using React.js, Express.js, and PostgreSQL with secure authentication (RBAC) for admins, users, and store owners
-- Implemented dashboards, ratings management, form validations, sortable/filterable tables, and a normalized database schema for scalability
+**SATSANG VACHAN SATSANG SEVA**  
+[Live: abhijayshah.github.io/satsang_vachan_satsang_seva](https://abhijayshah.github.io/satsang_vachan_satsang_seva/) | 2025 – Ongoing  
+- Developed a spiritual knowledge website for 20 crores followers of Baba Jai Gurudev, converting patrikas (published since 1969) into visual posters, summaries, and digital content.  
+- Integrated AI summarization pipelines to transform long teachings into simple visuals, making spiritual concepts accessible to youth and preserving decades of knowledge online.  
+_Technologies: HTML/CSS/JS, AI Tools (in progress)_  
 
-### ENGLISH TUTOR AI
-**Technologies:** Web Speech API, OpenRouter, Node.js, Socket.IO  
-**GitHub:** [English Tutor AI](https://github.com/Abhijayshah/English-Tutor-AI.git) | **April 2025**
+**COMFORTABLE STAY – HOTEL + RESTAURANT ALLIANCE**  
+[Live: abhijayshah.github.io/ComForTable_And_Stay](https://abhijayshah.github.io/ComForTable_And_Stay/) | 2024 – Ongoing  
+- Created a real-world PG/Hotel visibility system linking restaurants and hotels through a QR-based free-stay model.  
+- Enabled customers to earn 1-day stays based on bill amount, allowing PGs to gain visibility and increasing occupancy.  
+- Designed interactive UI, charts, partner listings, and automated deployment using GitHub Pages.  
+_Technologies: HTML/CSS/JS, Chart.js, GitHub Pages_  
 
-- Built a real-time, voice-enabled English learning app using Web Speech API, OpenRouter, Node.js, and Socket.IO
-- Integrated AI personalities for grammar correction, pronunciation feedback, and vocabulary building
-
-### COMFORTABLE STAY
-**Technologies:** HTML/CSS/JS, Chart.js, GitHub Pages  
-**Live Demo:** [ComForTable And Stay](https://abhijayshah.github.io/ComForTable_And_Stay/) | **Dec 2024**
-
-- Built a mobile-first, accessible single-page site with theme persistence, data-driven charts, QR deep links, and automated GitHub Pages deployment
-
-### ADVANCED MULTI-VIDEO PLAYER FOR WINDOWS & MACOS
-**Technologies:** HTML/CSS/JS  
-**Live Demo:** [MultiSync VideoPlayer](https://abhijayshah.github.io/MultiSync-VideoPlayer/) | **May 2023**
-
-- Designed for Windows and macOS to play and compare multiple videos (up to 9) simultaneously with adjustable speeds up to 10x
-- Includes built-in playlist management, file corruption checks, and individual controls for each video
-- No installation required; browser-based for consistent cross-device experience
-
----
-
-## WORK EXPERIENCE
-
-**ETHNUS (VIT BHOPAL)** | Bhopal, India  
-*MERN Full Stack Development* | **Jan 2025 - April 2025**  
-**Project:** [Ticket Support System](https://github.com/Abhijayshah/Ticket_Support_System.git)
-
-- Built full-stack web applications using MongoDB, Express.js, React.js, and Node.js
-- Developed and deployed CRUD-based projects with responsive UIs using HTML, CSS, Bootstrap, and JavaScript
-
----
-
-## ACTIVITIES
-
-**CODING PRACTICE (LEETCODE)**  
-**Profile:** [abhijayshah74](https://leetcode.com/u/abhijayshah74/)
-
-- Maintained a consistent streak of 190+ days of coding
-- Solved various problems involving data structures, algorithms, and system design
+**Advanced Multi-Video Player for Windows & macOS**  
+[Live: abhijayshah.github.io/MultiSync-VideoPlayer/](https://abhijayshah.github.io/MultiSync-VideoPlayer/) | May 2024  
+- Designed for Windows and macOS, this tool lets you play and compare multiple videos (up to 9) at once, with adjustable speeds up to 10x. Includes built-in playlist management, file corruption checks, and individual controls for each video, making multitasking smooth and hassle-free.  
+- No installation required, simply open in your browser for a consistent experience across all devices.  
+_Technologies: HTML/CSS/JS_  
 
 ---
 
 ## CERTIFICATIONS
 
-- **Python Certificate** | VITyarthi (May 2022)
-- **Bits and Bytes of Computer Networking** | Coursera (June 2023)
-- **Cloud Computing (Elite Silver) and Marketing Analytics (Elite Silver)** | SWAYAM NPTEL (April 2025)
-- **MERN Full Stack Certification Program** (January to April 2025)
-- **IBM Blockchain Certification** (January to April 2025)
+- **[MERN Full Stack Certificate](https://drive.google.com/file/d/1rzLarJuU9H3PQlQY3Jmeh5YI1nHtXKhj/view?usp=sharing)** — April 2025  
+- **[Blockchain Certificate](https://drive.google.com/file/d/1OKUmPx-F4S1SG2OJPGzHfKdFdwqwDQH1/view?usp=sharing)** — November 2025  
 
 ---
 
 ## ADDITIONAL INFORMATION
 
-**Languages:** Fluent in English and Hindi
-
-**Hobbies:** Reading self-improvement books, engaging with people on Instagram [@cat_catch__code__](https://instagram.com/cat_catch__code__), writing in books and project journals, listening to spiritual and motivational podcasts, speaking to YouTube community and podcast audience, meditation and fitness
-
----
+- **Languages:** English and Hindi  
