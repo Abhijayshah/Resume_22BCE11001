@@ -17,11 +17,11 @@
 
 **DAV PUBLIC SCHOOL, DUDHICHUA** | Singrauli, India  
 *Senior Secondary (Class XII)*  
-**Percentage:** 87.4% | **2019 – 2021**
+**CGPA** 9.2 | **2019 – 2021**
 
 **DAV PUBLIC SCHOOL, SURYA VIHAR** | Singrauli, India  
 *Secondary (Class X)*  
-**Percentage:** 93.6% | **2018 – 2019**
+**CGPA** 9.85 | **2018 – 2019**
 
 ---
 
