@@ -14,7 +14,7 @@ Singrauli - 486886 (MP), India
 **VELLORE INSTITUTE OF TECHNOLOGY (VIT)**  
 *Bachelor of Technology in Computer Science Engineering*  
 Expected May 2026  
-Cumulative GPA: 8.43/10
+Cumulative CGPA: 8.43
 
 **DAV PUBLIC SCHOOL, DUDHICHUA**  
 2019 – 2021 | Singrauli, India  
@@ -30,11 +30,16 @@ CGPA: 9.85
 
 ## TECHNICAL SKILLS
 
-- **Languages:** C++, Python, Java, HTML, CSS, JavaScript, MySQL, MongoDB, PostgreSQL  
-- **Frameworks:** React.js, Node.js, Express.js  
-- **Developer Tools:** Git, GitHub, Visual Studio Code  
+**Programming:** Python, C, C++, SQL  
+**Web Development:** HTML5, CSS3, React, Next.js, Tailwind CSS, Bootstrap, Express.js, MySQL, MongoDB  
+**Frameworks/Tools:** Git, GitHub, Vercel, Render, Netlify, Supabase, Firebase, Docker, Postman, Figma  
+**Other:** Cloud (AWS: EC2, S3, Lambda), Generative AI Integration, REST APIs, WebSockets, UI/UX Design, Authentication (Firebase, Clerk, JWT), Chatbot Development
 
 ---
+
+Frameworks/Tools: Git, GitHub, Vercel, Render, Netlify, Supabase, Firebase, Docker, Postman, Figma
+Other: Cloud (AWS: EC2, S3, Lambda), Generative AI Integration, REST APIs, WebSockets, UI/UX Design, Authentication
+(Firebase, Clerk, JWT), Chatbot Development.
 
 ## PROJECTS
 
