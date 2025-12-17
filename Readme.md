@@ -43,6 +43,20 @@ Other: Cloud (AWS: EC2, S3, Lambda), Generative AI Integration, REST APIs, WebSo
 
 ## PROJECTS
 
+**FULLSTACK STORE RATING PLATFORM (Backend)**  
+[GitHub: Store-Rating-Platform](https://github.com/Abhijayshah/Store-Rating-Platform) | Aug 2025 — In progress (adding to Hotel)  
+- Designed and developed RESTful APIs with Node.js and Express.js to support role-based access for admins, users, and store owners.  
+- Implemented secure authentication and authorization using JWT, input validation, and role-based permissions (RBAC).  
+- Architected a normalized PostgreSQL schema enabling scalable store management, ratings, filtering, and sorting operations.  
+_Technologies: Node.js, Express.js, PostgreSQL, JWT_  
+
+**ENGLISH TUTOR AI**  
+[GitHub: English-Tutor-AI](https://github.com/Abhijayshah/English-Tutor-AI) | Apr 2025 — In progress  
+- Built a real-time backend system using Node.js and Socket.IO to handle bi-directional voice interactions.  
+- Integrated AI-powered language processing via OpenRouter for grammar correction, pronunciation feedback, and vocabulary enhancement.  
+- Implemented event-driven communication and session handling to support low-latency, multi-user interactions.  
+_Technologies: Node.js, Socket.IO, Web Speech API, OpenRouter_  
+
 **CAT CATCH CODE**  
 [Live: catcatchcode.online](https://catcatchcode.online) | 2025 – Ongoing  
 - Built an educational platform inspired by GFG & JavaTpoint to help college students learn DSA and Development through short, easy explanations.  
