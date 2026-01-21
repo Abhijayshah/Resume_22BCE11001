@@ -5,7 +5,10 @@ Singrauli - 486886 (MP), India
 **Email:** [abhijayshah74@gmail.com](mailto:abhijayshah74@gmail.com)  
 **GitHub:** [Abhijayshah](https://github.com/Abhijayshah)  
 **Portfolio:** [abhijayshah.online](https://abhijayshah.online)  
-**LinkedIn:** [Abhijay Shah](https://www.linkedin.com/in/abhijay-shah-75a5a7251/)  
+**LinkedIn (old):** [Abhijay Shah](https://www.linkedin.com/in/abhijay-shah-75a5a7251/)  
+
+**LinkedIn (New Updated ):** [Abhijay Shah](https://www.linkedin.com/in/abhijayshah/)  
+
 
 ---
 
