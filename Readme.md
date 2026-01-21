@@ -7,7 +7,7 @@ Singrauli - 486886 (MP), India
 **Portfolio:** [abhijayshah.online](https://abhijayshah.online)  
 **LinkedIn (old):** [Abhijay Shah](https://www.linkedin.com/in/abhijay-shah-75a5a7251/)  
 
-**LinkedIn (New Updated ):** [Abhijay Shah](https://www.linkedin.com/in/abhijayshah/)  
+**LinkedIn profile 👤 ( New Updated 🔴 ) ➤ :** [Abhijay Shah](https://www.linkedin.com/in/abhijayshah/)  
 
 
 ---
