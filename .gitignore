@@ -1,1 +1,16 @@
-Abhijay_Kumar_Shah.pdf
+
+*.md # Ignore all markdown files
+
+!Readme.md # Important documentation file should not be ignored
+docs/*.md # Ignore all markdown files in the docs directory except Readme.md
+!docs/Readme.md # Important documentation file in docs directory should not be ignored
+
+
+# give me rules to ignore all markdown files except Readme.md and docs/Readme.md
+*.md
+!Readme.md
+docs/*.md
+!docs/Readme.md 
+
+# End of .gitignore
+

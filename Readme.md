@@ -1,99 +1,75 @@
 # ABHIJAY KUMAR SHAH
 
-Singrauli - 486886 (MP), India  
-**Phone:** +91 7879028316  
-**Email:** [abhijayshah74@gmail.com](mailto:abhijayshah74@gmail.com)  
-**GitHub:** [Abhijayshah](https://github.com/Abhijayshah)  
-**Portfolio:** [abhijayshah.online](https://abhijayshah.online)  
-**LinkedIn (old):** [Abhijay Shah](https://www.linkedin.com/in/abhijay-shah-75a5a7251/)  
-
-**LinkedIn profile 👤 ( New Updated 🔴 ) ➤ :** [Abhijay Shah](https://www.linkedin.com/in/abhijayshah/)  
-
++91 78790 28316 | [abhijayshah74@gmail.com](mailto:abhijayshah74@gmail.com) | [linkedin.com/in/abhijayshah](https://www.linkedin.com/in/abhijayshah/) | [github.com/Abhijayshah](https://github.com/Abhijayshah)
 
 ---
 
-## EDUCATION
+## Education
 
-**VELLORE INSTITUTE OF TECHNOLOGY (VIT)**  
-*Bachelor of Technology in Computer Science Engineering*  
-Expected May 2026  
-Cumulative CGPA: 8.43
+**Vellore Institute of Technology** — B.Tech in Computer Science & Engineering | Jul 2026 (Expected)  
+CGPA: 8.44 / 10.0
 
-**DAV PUBLIC SCHOOL, DUDHICHUA**  
-2019 – 2021 | Singrauli, India  
-Senior Secondary (Class XII)  
-CGPA: 9.20
+**DAV Public School, Dudhichua** | 2019–2021  
+Senior Secondary (Class XII) | CGPA: 9.20 / 10.0
 
-**DAV PUBLIC SCHOOL, SURYA VIHAR**  
-2018 – 2019 | Singrauli, India  
-Secondary (Class X)  
-CGPA: 9.85
+**DAV Public School, Surya Vihar** | 2018–2019  
+Secondary (Class X) | CGPA: 9.85 / 10.0
 
 ---
 
-## TECHNICAL SKILLS
+## Technical Skills
 
-**Programming:** Python, C, C++, SQL  
-**Web Development:** HTML5, CSS3, React, Next.js, Tailwind CSS, Bootstrap, Express.js, MySQL, MongoDB  
-**Frameworks/Tools:** Git, GitHub, Vercel, Render, Netlify, Supabase, Firebase, Docker, Postman, Figma  
-**Other:** Cloud (AWS: EC2, S3, Lambda), Generative AI Integration, REST APIs, WebSockets, UI/UX Design, Authentication (Firebase, Clerk, JWT), Chatbot Development
-
----
-
-Frameworks/Tools: Git, GitHub, Vercel, Render, Netlify, Supabase, Firebase, Docker, Postman, Figma
-Other: Cloud (AWS: EC2, S3, Lambda), Generative AI Integration, REST APIs, WebSockets, UI/UX Design, Authentication
-(Firebase, Clerk, JWT), Chatbot Development.
-
-## PROJECTS
-
-**FULLSTACK STORE RATING PLATFORM (Backend)**  
-[GitHub: Store-Rating-Platform](https://github.com/Abhijayshah/Store-Rating-Platform) | Aug 2025 — In progress (adding to Hotel)  
-- Designed and developed RESTful APIs with Node.js and Express.js to support role-based access for admins, users, and store owners.  
-- Implemented secure authentication and authorization using JWT, input validation, and role-based permissions (RBAC).  
-- Architected a normalized PostgreSQL schema enabling scalable store management, ratings, filtering, and sorting operations.  
-_Technologies: Node.js, Express.js, PostgreSQL, JWT_  
-
-**ENGLISH TUTOR AI**  
-[GitHub: English-Tutor-AI](https://github.com/Abhijayshah/English-Tutor-AI) | Apr 2025 — In progress  
-- Built a real-time backend system using Node.js and Socket.IO to handle bi-directional voice interactions.  
-- Integrated AI-powered language processing via OpenRouter for grammar correction, pronunciation feedback, and vocabulary enhancement.  
-- Implemented event-driven communication and session handling to support low-latency, multi-user interactions.  
-_Technologies: Node.js, Socket.IO, Web Speech API, OpenRouter_  
-
-**CAT CATCH CODE**  
-[Live: catcatchcode.online](https://catcatchcode.online) | 2025 – Ongoing  
-- Built an educational platform inspired by GFG & JavaTpoint to help college students learn DSA and Development through short, easy explanations.  
-- Created separate modules — Cat_Catch_DSA & Cat_Catch_Development — and currently merging them into a full MERN-based platform offering roadmaps, AI-assisted learning, and beginner-friendly project guidance.  
-_Technologies: HTML/CSS/JS, MERN (in progress)_  
-
-**SATSANG VACHAN SATSANG SEVA**  
-[Live: abhijayshah.github.io/satsang_vachan_satsang_seva](https://abhijayshah.github.io/satsang_vachan_satsang_seva/) | 2025 – Ongoing  
-- Developed a spiritual knowledge website for 20 crores followers of Baba Jai Gurudev, converting patrikas (published since 1969) into visual posters, summaries, and digital content.  
-- Integrated AI summarization pipelines to transform long teachings into simple visuals, making spiritual concepts accessible to youth and preserving decades of knowledge online.  
-_Technologies: HTML/CSS/JS, AI Tools (in progress)_  
-
-**COMFORTABLE STAY – HOTEL + RESTAURANT ALLIANCE**  
-[Live: abhijayshah.github.io/ComForTable_And_Stay](https://abhijayshah.github.io/ComForTable_And_Stay/) | 2024 – Ongoing  
-- Created a real-world PG/Hotel visibility system linking restaurants and hotels through a QR-based free-stay model.  
-- Enabled customers to earn 1-day stays based on bill amount, allowing PGs to gain visibility and increasing occupancy.  
-- Designed interactive UI, charts, partner listings, and automated deployment using GitHub Pages.  
-_Technologies: HTML/CSS/JS, Chart.js, GitHub Pages_  
-
-**Advanced Multi-Video Player for Windows & macOS**  
-[Live: abhijayshah.github.io/MultiSync-VideoPlayer/](https://abhijayshah.github.io/MultiSync-VideoPlayer/) | May 2024  
-- Designed for Windows and macOS, this tool lets you play and compare multiple videos (up to 9) at once, with adjustable speeds up to 10x. Includes built-in playlist management, file corruption checks, and individual controls for each video, making multitasking smooth and hassle-free.  
-- No installation required, simply open in your browser for a consistent experience across all devices.  
-_Technologies: HTML/CSS/JS_  
+**Languages & Frontend:** C++, Python, JavaScript (ES6+), SQL, React.js, Tailwind CSS, Context API  
+**Backend & Databases:** Node.js, Express.js, MongoDB (Mongoose), PostgreSQL, REST APIs, WebSockets  
+**Tools, Cloud & Security:** Git, Docker, Postman, AWS (Basic), JWT, RBAC, OpenRouter/Gemini API
 
 ---
 
-## CERTIFICATIONS
+## Projects
 
-- **[MERN Full Stack Certificate](https://drive.google.com/file/d/1rzLarJuU9H3PQlQY3Jmeh5YI1nHtXKhj/view?usp=sharing)** — April 2025  
-- **[Blockchain Certificate](https://drive.google.com/file/d/1OKUmPx-F4S1SG2OJPGzHfKdFdwqwDQH1/view?usp=sharing)** — November 2025  
+**Rately — Store Rating Platform & AI Chatbot** — MERN Stack, Tailwind CSS, RBAC, OpenRouter API and Gemini API | [Link](https://rately-ten.vercel.app/)  
+- Architected a scalable platform featuring Role-Based Access Control (RBAC) to manage distinct permissions for Admins, Owners, & Users.
+- Integrated a context-aware AI Chatbot via OpenRouter API to assist users, enhancing platform engagement & support navigation.
+- Implemented enterprise-grade security using JWT, Helmet, & Rate Limiting to protect against unauthorized access & DDoS attacks.
+- Designed a modular frontend with React & Tailwind CSS, utilizing Context API for seamless global state management.
+
+**ParkEasy — Smart Parking Reservation System** — React.js, Node.js, Express, MongoDB, JWT | [Link](https://park-easy-tndl.vercel.app/)  
+- Engineered a comprehensive parking reservation system using the MERN stack, enabling real-time slot booking & data persistence.
+- Designed robust RESTful APIs with Node.js & Express, utilizing Mongoose for strict schema validation of booking data.
+- Implemented secure JWT authentication & managed complex application state (user sessions) using React Context API.
+- Developed a responsive UI with CSS Modules, ensuring a consistent user experience across devices.
+
+**Comfortable Stay — Hotel Plus Restaurant Alliance** — HTML, CSS, JavaScript, Chart.js | [Link](https://abhijayshah.github.io/ComForTable_And_Stay/)  
+- Designed a QR-driven alliance platform improving discoverability for PGs & budget hotels via bill-based free stay eligibility.
+- Implemented eligibility rules & room-tier allocation (waiting room, non-AC, AC beds) with real-time dashboards & booking workflows.
+- Planned backend migration to REST APIs, database-backed persistence, validation, & role-based access.
+
+**Advanced Multi-Video Player** — JavaScript, Performance Optimization, Browser APIs | [Link](https://abhijayshah.github.io/MultiSync-VideoPlayer/)  
+- Engineered a multi-instance video playback system supporting 9 concurrent players with synchronized controls & 10× playback speed.
+- Implemented intelligent file validation & corruption detection, ensuring safe loading with real-time error reporting mechanisms.
+- Designed resource-efficient state & memory management to maintain stable performance across Windows & macOS.
 
 ---
 
-## ADDITIONAL INFORMATION
+## Leadership / Achievements
 
-- **Languages:** English and Hindi  
+**CatCatchCode** — [catcatchcode.online](https://catcatchcode.online) | Jul 2025 – Present  
+Founder & Technical Lead — VIT | [Link](https://catcatchcode.online)  
+- Founded an ed-tech initiative providing placement guidance, curated study material, and senior mentorship for students.
+- Led a 5-member team to produce 100+ technical learning videos, impacting 100+ students.
+- Designed beginner-to-intermediate learning roadmaps for DSA, Full-Stack development, and AI automation.
+- Expanded content across LinkedIn, YouTube, Instagram, and GitHub, building an early-stage learning community.
+
+**Satsang Vachan Satsang Seva** — [satsangvachansatsangseva.online](https://satsangvachansatsangseva.online) | Sept 2025 – Present  
+Co-Founder & Project Lead – Digital Preservation & Social Impact Initiative | [Link](https://satsangvachansatsangseva.online)  
+- Leading a digital preservation initiative to convert decades of archival literature into modern visual and multimedia formats.
+- Spearheading a digitization initiative to preserve 50+ years of archival literature for a global community of 200 Million+ followers.
+- Collaborating with contributors to produce posters, magazines, podcasts, and animated content for large-scale audiences.
+- Applying AI-assisted summarization to transform long-form textual material into concise, accessible visuals.
+- Designing a scalable content platform focused on accessibility, maintainability, and positive social impact.
+
+---
+
+## Certifications
+
+**MERN Full Stack Certificate** — Apr 2025 | [Link](https://drive.google.com/file/d/1rzLarJuU9H3PQlQY3Jmeh5YI1nHtXKhj/view?usp=sharing)
