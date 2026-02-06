@@ -1,5 +1,10 @@
 # ABHIJAY KUMAR SHAH
 
+[![Email](https://img.shields.io/badge/Email-abhijayshah74%40gmail.com-red?style=flat-square&logo=gmail)](mailto:abhijayshah74@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abhijay%20Shah-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/abhijayshah/)
+[![GitHub](https://img.shields.io/badge/GitHub-Abhijay%20Shah-black?style=flat-square&logo=github)](https://github.com/Abhijayshah)
+[![Phone](https://img.shields.io/badge/Phone-%2B91%2078790%2028316-green?style=flat-square&logo=whatsapp)](https://wa.me/917879028316)
+
 +91 78790 28316 | [abhijayshah74@gmail.com](mailto:abhijayshah74@gmail.com) | [linkedin.com/in/abhijayshah](https://www.linkedin.com/in/abhijayshah/) | [github.com/Abhijayshah](https://github.com/Abhijayshah)
 
 ---
@@ -21,7 +26,7 @@ Secondary (Class X) | CGPA: 9.85 / 10.0
 
 **Languages & Frontend:** C++, Python, JavaScript (ES6+), SQL, React.js, Tailwind CSS, Context API  
 **Backend & Databases:** Node.js, Express.js, MongoDB (Mongoose), PostgreSQL, REST APIs, WebSockets  
-**Tools, Cloud & Security:** Git, Docker, Postman, AWS (Basic), JWT, RBAC, OpenRouter/Gemini API
+**Tools, Cloud & Security:** Git, Github , Vercel , Render , Postman, AWS (Basic), JWT, RBAC, OpenRouter/Gemini API - ai-chatbot integration . 
 
 ---
 
@@ -32,6 +37,12 @@ Secondary (Class X) | CGPA: 9.85 / 10.0
 - Integrated a context-aware AI Chatbot via OpenRouter API to assist users, enhancing platform engagement & support navigation.
 - Implemented enterprise-grade security using JWT, Helmet, & Rate Limiting to protect against unauthorized access & DDoS attacks.
 - Designed a modular frontend with React & Tailwind CSS, utilizing Context API for seamless global state management.
+
+**Scholara — AI-Enabled Academic Workflow System** — MERN Stack, JWT, RBAC, Document Analysis | [Link](https://school-system-murex.vercel.app)  
+- Architected a Full-Stack Workflow Platform with Role-Based Access Control (RBAC), managing secure distinct portals for Students (Submission) and Faculty (Review).
+- Engineered a state-driven approval pipeline (Proposal → Approval → Final Upload), utilizing RESTful APIs to enforce validation rules at each stage.
+- Developed a Real-Time Faculty Dashboard using React & Tailwind to visualize submission metrics, track pending reviews, and monitor student progress.
+- Integrated an Automated AI Analysis Engine to parse PDF uploads, validating document structure and generating instant compliance feedback for students.
 
 **ParkEasy — Smart Parking Reservation System** — React.js, Node.js, Express, MongoDB, JWT | [Link](https://park-easy-tndl.vercel.app/)  
 - Engineered a comprehensive parking reservation system using the MERN stack, enabling real-time slot booking & data persistence.
