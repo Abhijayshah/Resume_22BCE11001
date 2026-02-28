@@ -1,4 +1,4 @@
-# ABHIJAY KUMAR SHAH -22BCE11001 - VIT
+# ABHIJAY KUMAR SHAH - VIT
 
 [![Email](https://img.shields.io/badge/Email-abhijayshah74%40gmail.com-red?style=flat-square&logo=gmail)](mailto:abhijayshah74@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Abhijay%20Shah-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/abhijayshah/)
@@ -18,7 +18,7 @@ CGPA: 8.44 / 10.0
 Senior Secondary (Class XII) | CGPA: 9.20 / 10.0
 
 **DAV Public School, Surya Vihar** | 2018–2019  
-Secondary (Class X) | CGPA: 9.85 / 10.0
+Secondary (Class X) | CGPA: 9.81 / 10.0
 
 ---
 
