@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhijay — HR Interview Prep Kit</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; background: #f4f6fa; color: #1a1a2e; line-height: 1.6; }
+  .header { background: linear-gradient(135deg, #1A56DB 0%, #0b3d91 100%); color: white; padding: 32px 40px; }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; }
+  .header p { font-size: 14px; opacity: 0.85; }
+  .tabs { display: flex; gap: 0; background: #fff; border-bottom: 2px solid #e5e7eb; padding: 0 40px; overflow-x: auto; }
+  .tab { padding: 14px 20px; cursor: pointer; font-size: 13px; font-weight: 600; color: #6b7280; border-bottom: 3px solid transparent; white-space: nowrap; transition: all 0.2s; }
+  .tab.active { color: #1A56DB; border-bottom-color: #1A56DB; }
+  .tab:hover:not(.active) { color: #374151; }
+  .content { display: none; padding: 32px 40px; max-width: 900px; margin: 0 auto; }
+  .content.active { display: block; }
+  .section-label { font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: #1A56DB; margin-bottom: 12px; }
+  .card { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 20px; border: 1px solid #e5e7eb; }
+  .card h3 { font-size: 16px; font-weight: 700; color: #0f172a; margin-bottom: 10px; }
+  .q-label { display: inline-block; background: #eff6ff; color: #1A56DB; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; letter-spacing: 0.5px; }
+  .answer-box { background: #f8fafc; border-left: 4px solid #1A56DB; border-radius: 0 8px 8px 0; padding: 16px 18px; margin-top: 12px; font-size: 14px; color: #334155; line-height: 1.75; }
+  .answer-box strong { color: #0f172a; }
+  .tip { background: #fef9ec; border: 1px solid #fbbf24; border-radius: 8px; padding: 12px 16px; font-size: 13px; color: #92400e; margin-top: 10px; }
+  .tip::before { content: "💡 Tip: "; font-weight: 700; }
+  .warn { background: #fef2f2; border: 1px solid #fca5a5; border-radius: 8px; padding: 12px 16px; font-size: 13px; color: #991b1b; margin-top: 10px; }
+  .warn::before { content: "⚠️ Avoid: "; font-weight: 700; }
+  .star-grid { display: grid; grid-template-columns: 120px 1fr; gap: 8px; margin-top: 12px; }
+  .star-label { font-size: 12px; font-weight: 700; color: #1A56DB; padding: 8px 12px; background: #eff6ff; border-radius: 6px; display: flex; align-items: center; }
+  .star-val { font-size: 13px; color: #334155; padding: 8px 0; display: flex; align-items: center; border-bottom: 1px solid #f1f5f9; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; margin-right: 6px; }
+  .badge.hard { background: #fee2e2; color: #991b1b; }
+  .badge.med { background: #fef3c7; color: #92400e; }
+  .badge.easy { background: #d1fae5; color: #065f46; }
+  .company-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+  .co-badge { padding: 4px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; border: 1.5px solid; }
+  .co-clara { color: #1A56DB; border-color: #1A56DB; background: #eff6ff; }
+  .co-esds { color: #0B6E4F; border-color: #0B6E4F; background: #ecfdf5; }
+  .co-vidu { color: #7C3AED; border-color: #7C3AED; background: #f5f3ff; }
+  .co-emp { color: #b45309; border-color: #b45309; background: #fffbeb; }
+  .co-all { color: #374151; border-color: #9ca3af; background: #f9fafb; }
+  .progress-bar { height: 4px; background: #e5e7eb; border-radius: 2px; margin: 20px 0; }
+  .progress-fill { height: 100%; background: #1A56DB; border-radius: 2px; width: 0%; transition: width 0.5s; }
+  h2.section-title { font-size: 20px; font-weight: 700; color: #0f172a; margin-bottom: 20px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media(max-width: 600px) { .two-col { grid-template-columns: 1fr; } .content { padding: 20px; } .tabs { padding: 0 16px; } .header { padding: 24px 20px; } }
+  .numbered { counter-reset: qnum; }
+  .numbered .card { counter-increment: qnum; }
+  .numbered .card h3::before { content: "Q" counter(qnum) ". "; color: #1A56DB; }
+  .intro-card { background: linear-gradient(135deg, #eff6ff, #f5f3ff); border: 1px solid #c7d2fe; border-radius: 12px; padding: 20px 24px; margin-bottom: 24px; }
+  .intro-card p { font-size: 14px; color: #374151; }
+  .intro-card strong { color: #1A56DB; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Abhijay Kumar Shah — HR Interview Prep Kit</h1>
+  <p>General prep across Clara AI · ESDS · VuduCom · Empower · All future roles</p>
+</div>
+
+<div class="tabs">
+  <div class="tab active" onclick="show('intro')">🎯 Strategy</div>
+  <div class="tab" onclick="show('tell-me')">Tell Me About You</div>
+  <div class="tab" onclick="show('behavioural')">Behavioural</div>
+  <div class="tab" onclick="show('catcatch')">CatCatchCode</div>
+  <div class="tab" onclick="show('why-company')">Why This Company</div>
+  <div class="tab" onclick="show('weakness')">Weakness / Failure</div>
+  <div class="tab" onclick="show('salary')">Salary / Logistics</div>
+  <div class="tab" onclick="show('ask-them')">Questions to Ask</div>
+</div>
+
+<!-- STRATEGY TAB -->
+<div id="intro" class="content active">
+  <h2 class="section-title">HR Round — Your Game Plan</h2>
+
+  <div class="intro-card">
+    <p>The HR round is <strong>not a personality test</strong>. It's a structured check for: communication clarity, self-awareness, cultural fit, and red flag detection. Every question has a hidden intent. This guide tells you both.</p>
+  </div>
+
+  <div class="section-label">The 4 things every HR interviewer is checking</div>
+  <div class="two-col">
+    <div class="card">
+      <h3>🧠 Self-awareness</h3>
+      <p style="font-size:14px;color:#334155;">Can you talk about yourself honestly? Do you know your strengths and weaknesses without being defensive or fake-humble?</p>
+    </div>
+    <div class="card">
+      <h3>🤝 Team fit</h3>
+      <p style="font-size:14px;color:#334155;">Will you work well with the team? Do you handle conflict maturely? Can you take feedback?</p>
+    </div>
+    <div class="card">
+      <h3>🚀 Growth mindset</h3>
+      <p style="font-size:14px;color:#334155;">Are you someone who learns continuously, or do you stall? Your CatCatchCode and cert list is gold here.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ Commitment</h3>
+      <p style="font-size:14px;color:#334155;">Will you stay? Are you genuinely interested in this company or just spraying applications? Be honest but strategic.</p>
+    </div>
+  </div>
+
+  <div class="section-label" style="margin-top:8px;">Your personal unfair advantages</div>
+  <div class="card">
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="display:flex;gap:12px;align-items:flex-start;font-size:14px;color:#334155;">
+        <span style="font-size:18px;">🏗️</span><span><strong>Builder identity</strong> — You have 20+ deployed projects. Most freshers have 2-3 college assignments. Lead with this confidently.</span>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;font-size:14px;color:#334155;">
+        <span style="font-size:18px;">👨‍🏫</span><span><strong>Mentor credibility</strong> — Teaching 100+ students proves you understand things deeply, not just surface-level. This is rare at fresher level.</span>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;font-size:14px;color:#334155;">
+        <span style="font-size:18px;">🌐</span><span><strong>Social impact</strong> — Satsang Vachan for 200M+ followers. This is a compelling "passion project" story most engineers can't match.</span>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start;font-size:14px;color:#334155;">
+        <span style="font-size:18px;">🤖</span><span><strong>AI-first thinking</strong> — You're not just using AI tools, you're teaching others how to integrate them. In 2026, this is exactly what companies want.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">The 3 sentences you must NEVER say</div>
+  <div class="card">
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <div class="warn">I'm looking for this job because I don't have any other offer.</div>
+      <div class="warn">We started CatCatchCode because we needed money / didn't have clients.</div>
+      <div class="warn">I want to join to gain experience — I don't have much real-world exposure yet.</div>
+    </div>
+    <div style="margin-top:14px;font-size:13px;color:#334155;">Instead, reframe: you built CatCatchCode to solve a real educational gap. You want to join a company to work on problems at a scale you can't create solo yet. You bring skills — you want a challenge that matches them.</div>
+  </div>
+</div>
+
+<!-- TELL ME ABOUT YOURSELF -->
+<div id="tell-me" class="content">
+  <h2 class="section-title">Tell Me About Yourself</h2>
+
+  <div class="intro-card">
+    <p>This is your <strong>60-second pitch</strong>. It sets the tone for everything that follows. Structure: Who you are → What you've built → What drives you → What you're looking for.</p>
+  </div>
+
+  <div class="card">
+    <span class="q-label">UNIVERSAL ANSWER — USE THIS FOR ALL ROLES</span>
+    <h3>Tell me about yourself</h3>
+    <div class="answer-box">
+      <p>"I'm a final-year Computer Science student at VIT, graduating in July 2026 with a CGPA of 8.44.</p><br>
+      <p>Over the past two years, I've gone beyond coursework to build 20+ production-grade projects — full-stack MERN applications, AI-integrated backends, and mobile apps — all deployed on real cloud infrastructure. I'm not someone who builds things and leaves them in a folder — I ship them.</p><br>
+      <p>Alongside that, I co-founded CatCatchCode, an EdTech platform where I've mentored over 100 engineering students in DSA, full-stack development, and AI tool integration. That experience taught me how to explain complex systems clearly and work systematically — which I think matters as much as the code itself.</p><br>
+      <p>I'm looking to join a company where I can work on real-world engineering problems at a scale that challenges me — contribute to a strong team, grow fast, and build things that actually matter to users."</p>
+    </div>
+    <div class="tip">Keep this to exactly 60–75 seconds when spoken. Practice it out loud 10 times until it sounds natural, not rehearsed.</div>
+  </div>
+
+  <div class="card">
+    <span class="q-label">VARIANT — FOR AI/AUTOMATION ROLES (Clara, ESDS)</span>
+    <h3>Tell me about yourself</h3>
+    <div class="answer-box">
+      <p>Same opening, then:</p><br>
+      <p>"...More recently I've been diving deep into AI integration — I've built LLM orchestration systems using GPT-4, Claude, and Gemini, and I'm currently exploring n8n automation workflows and AI agent integration. I've also been teaching this to 100+ students through CatCatchCode, which keeps me sharp because you can't teach what you don't truly understand."</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="q-label">VARIANT — FOR MOBILE ROLES (VuduCom)</span>
+    <h3>Tell me about yourself</h3>
+    <div class="answer-box">
+      <p>Same opening, then:</p><br>
+      <p>"...I've recently expanded into mobile development — I've built React Native and SwiftUI apps with offline-first architecture, biometric auth, and real-time cloud sync. My co-founder is a senior iOS and Android developer with 20+ shipped apps, so I'm learning fast from someone doing it at production scale. We currently have 10+ apps being deployed to the Play Store."</p>
+    </div>
+  </div>
+</div>
+
+<!-- BEHAVIOURAL -->
+<div id="behavioural" class="content numbered">
+  <h2 class="section-title">Behavioural Questions — STAR Framework</h2>
+
+  <div class="intro-card">
+    <p>Every behavioural question follows the <strong>STAR format</strong>: Situation → Task → Action → Result. Your answer should be 60–90 seconds. Always end with what you learned.</p>
+  </div>
+
+  <div class="card">
+    <div class="company-row"><span class="co-badge co-all">All roles</span><span class="badge hard">Hard</span></div>
+    <h3>Tell me about a time you faced a difficult technical problem and how you solved it.</h3>
+    <div class="star-grid">
+      <div class="star-label">Situation</div>
+      <div class="star-val">While deploying ProjectHub, the app worked perfectly on localhost but kept throwing 401 authentication errors in production on Render.</div>
+      <div class="star-label">Task</div>
+      <div class="star-val">I had to diagnose and fix a production authentication failure with no senior engineer to ask — just logs, docs, and persistence.</div>
+      <div class="star-label">Action</div>
+      <div class="star-val">I isolated the issue systematically: checked CORS config, then environment variables, then traced the OpenRouter API call headers. Found that the Authorization header format was slightly different in production due to an env variable missing the "Bearer " prefix. Also discovered an IPv4/IPv6 localhost conflict that was silently redirecting requests.</div>
+      <div class="star-label">Result</div>
+      <div class="star-val">Fixed both bugs, restored 100% system availability. More importantly, I documented the root causes so the same issues won't happen again — and I now always test env variables in staging before pushing to production.</div>
+    </div>
+    <div class="tip">This answer demonstrates debugging mindset, ownership, and documentation — three things Empower and Clara explicitly mention in their JDs.</div>
+  </div>
+
+  <div class="card">
+    <div class="company-row"><span class="co-badge co-all">All roles</span><span class="badge med">Medium</span></div>
+    <h3>Tell me about a time you had to learn something completely new in a short time.</h3>
+    <div class="star-grid">
+      <div class="star-label">Situation</div>
+      <div class="star-val">For the AI Customer Support Bot, I needed to build a production FastAPI backend in Python — but I had primarily worked in JavaScript/Node.js until then.</div>
+      <div class="star-label">Task</div>
+      <div class="star-val">Deliver a functional, documented async Python backend with Gemini integration, session persistence, and human-escalation logic.</div>
+      <div class="star-label">Action</div>
+      <div class="star-val">I spent two days reading FastAPI and SQLAlchemy documentation intensively, built small isolated test functions first, then progressively assembled the full backend. I used the fact that Python and JavaScript share async/await patterns to accelerate my learning.</div>
+      <div class="star-label">Result</div>
+      <div class="star-val">Shipped a working production backend with Swagger/OpenAPI auto-documentation. Now Python is part of my core stack. This taught me that learning velocity matters more than knowing every framework in advance.</div>
+    </div>
+    <div class="tip">Perfect answer for ESDS ("learning velocity") and Clara ("learn a new framework in 48 hours").</div>
+  </div>
+
+  <div class="card">
+    <div class="company-row"><span class="co-badge co-emp">Empower</span><span class="co-badge co-all">All roles</span><span class="badge med">Medium</span></div>
+    <h3>Describe a time you worked effectively in a team.</h3>
+    <div class="star-grid">
+      <div class="star-label">Situation</div>
+      <div class="star-val">At CatCatchCode, I lead a 2-person engineering team with my co-founder — a senior mobile developer — while also managing 5 content contributors.</div>
+      <div class="star-label">Task</div>
+      <div class="star-val">We needed to produce 100+ technical videos while simultaneously building and shipping web and mobile projects to deadline.</div>
+      <div class="star-label">Action</div>
+      <div class="star-val">We divided responsibilities clearly by strength — my co-founder handled mobile architecture while I led web and backend. We used GitHub for code collaboration with PR reviews, held weekly sprint reviews, and documented decisions so contributors could work asynchronously.</div>
+      <div class="star-label">Result</div>
+      <div class="star-val">100+ videos produced, 20+ projects shipped, 100+ students impacted. The clear division of ownership and async-first approach let us move fast without stepping on each other.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="company-row"><span class="co-badge co-all">All roles</span><span class="badge easy">Easy</span></div>
+    <h3>Where do you see yourself in 3–5 years?</h3>
+    <div class="answer-box">
+      <p>"In 3 years, I want to have grown into a senior full-stack or AI systems engineer — someone who can own a feature end-to-end, from architecture decisions to production deployment and monitoring.</p><br>
+      <p>In 5 years, I'd like to be leading technical decisions on a product team — mentoring junior engineers the same way I've been mentoring students at CatCatchCode, but at a professional scale.</p><br>
+      <p>What I care most about is working on things that real users depend on — software that solves genuine problems. [This company] is exactly the kind of place where that kind of growth is possible."</p>
+    </div>
+    <div class="tip">Always connect your 5-year answer back to the company. It signals genuine interest, not just career ambition.</div>
+  </div>
+
+  <div class="card">
+    <div class="company-row"><span class="co-badge co-all">All roles</span><span class="badge med">Medium</span></div>
+    <h3>How do you handle pressure or tight deadlines?</h3>
+    <div class="answer-box">
+      <p>"I actually work well under pressure — I've found that constraints help me prioritise clearly. When I'm building a project with a deadline, I break it down into the smallest shippable unit first, get that working, then layer on features.</p><br>
+      <p>A real example: while preparing my Scholara project alongside VIT coursework, I had overlapping deadlines. I listed all tasks by impact vs time, cut anything that wasn't essential to the core workflow, and shipped the MVP first. Then I added the AI document analysis feature after the core was stable.</p><br>
+      <p>Pressure doesn't make me freeze — it makes me focus."</p>
+    </div>
+  </div>
+</div>
+
+<!-- CATCATCHCODE TAB -->
+<div id="catcatch" class="content">
+  <h2 class="section-title">CatCatchCode — How to Frame It</h2>
+
+  <div class="intro-card">
+    <p>CatCatchCode is your <strong>biggest differentiator</strong> as a fresher. Most candidates have zero leadership experience. You have a real platform, real users, real team. Use it confidently — but frame it correctly.</p>
+  </div>
+
+  <div class="card">
+    <span class="q-label">MOST COMMON QUESTION</span>
+    <h3>"Tell me more about CatCatchCode."</h3>
+    <div class="answer-box">
+      <p>"CatCatchCode is an EdTech platform I co-founded with a senior software engineer who has 20+ shipped apps across iOS, Android, and Flutter.</p><br>
+      <p>The core idea was simple: there's a huge gap between what engineering colleges teach and what the industry actually expects. We saw students struggling not because they weren't smart, but because they'd never built anything real. So we created a platform to fix that — through production-grade project tutorials, placement roadmaps, and hands-on mentorship.</p><br>
+      <p>We've produced 100+ technical videos, mentored 100+ students across DSA, full-stack development, and AI automation, and we've personally shipped 20+ deployed web and mobile projects as proof that what we teach actually works.</p><br>
+      <p>It's been the most intense learning experience of my engineering degree — because when you have to teach something, you truly understand it at a different level."</p>
+    </div>
+    <div class="tip">Notice: no mention of "we needed money" or "no clients." Lead with the problem you solved, not the personal motivation.</div>
+  </div>
+
+  <div class="card">
+    <span class="q-label">TRICKY FOLLOW-UP</span>
+    <h3>"Is this a real business or just a side project?"</h3>
+    <div class="answer-box">
+      <p>"It started as a side project but it's evolved into something more real. We have an active user base of students, a YouTube channel, a deployed platform, and we're building toward providing web, mobile, and automation services to small businesses and startups.</p><br>
+      <p>Honestly, running it has taught me more about product thinking, team coordination, and shipping under constraints than any classroom project could. Whether it becomes a full business or not, the skills and experience it's given me are completely real."</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="q-label">TRICKY FOLLOW-UP</span>
+    <h3>"Who is your co-founder? How did you two meet?"</h3>
+    <div class="answer-box">
+      <p>"My co-founder graduated from Chandigarh University in 2025 — he's a full-stack mobile developer who's built and shipped 20+ apps across iOS, Android, and Flutter. We've known each other for a long time and have a strong foundation of trust, which honestly makes technical collaboration much smoother. He handles the mobile architecture, I lead the web and backend, and we review each other's work through GitHub PRs."</p>
+    </div>
+    <div class="tip">If they ask "how long have you known him?" — you can say "we go way back" or "long enough to know how each other thinks." You don't need to say "he's my brother" unless directly asked.</div>
+    <div class="warn">If directly asked "Is he a family member?" — be honest. Say "Yes, he's my brother actually — which gave us a foundation of trust that most co-founder pairs spend years building." Turn it into a strength.</div>
+  </div>
+
+  <div class="card">
+    <span class="q-label">POTENTIAL CONCERN</span>
+    <h3>"If you have your own platform, why do you want to work for us?"</h3>
+    <div class="answer-box">
+      <p>"CatCatchCode has been an incredible experience, but there are things I can't learn by building alone — working with experienced senior engineers on complex systems, contributing to a codebase that thousands of users depend on, shipping features inside a real product organisation.</p><br>
+      <p>I want both. CatCatchCode taught me how to build and ship independently. [Company name] will teach me how to build at scale, with the kind of mentorship and codebase complexity that accelerates growth in ways I simply can't replicate solo. The two aren't in conflict — they complement each other."</p>
+    </div>
+  </div>
+</div>
+
+<!-- WHY THIS COMPANY -->
+<div id="why-company" class="content">
+  <h2 class="section-title">Why This Company — Tailored Answers</h2>
+
+  <div class="intro-card">
+    <p>This is the question most candidates fail. <strong>Generic answers kill your chances.</strong> "Great culture and learning opportunities" tells the interviewer nothing. Reference something specific about the company.</p>
+  </div>
+
+  <div class="card">
+    <div class="company-row"><span class="co-badge co-clara">Clara AI</span></div>
+    <h3>Why do you want to join Clara AI?</h3>
+    <div class="answer-box">
+      <p>"Clara is building something genuinely hard — automating inbound call operations, emergency routing, and dispatch logic using AI. That's not a demo project, that's infrastructure that service businesses in North America depend on every day.</p><br>
+      <p>What drew me specifically is the intersection of LLM integration and real backend systems. I've built AI-powered bots and automation pipelines — the AI Customer Support Bot, VoiceGPT, English-Tutor-AI — but all of them were solo projects. Working at Clara means building those systems at production scale, with paying customers depending on them.</p><br>
+      <p>The growth path to AI Systems Engineer or Automation Architect is exactly where I want to be in three years. I want to grow into that role here."</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="company-row"><span class="co-badge co-esds">ESDS</span></div>
+    <h3>Why do you want to join ESDS?</h3>
+    <div class="answer-box">
+      <p>"India's digital infrastructure running on foreign servers is a real sovereignty problem — and ESDS has been solving it for 22 years. That context matters to me personally. I'm an engineer who wants to build things that last and matter at scale.</p><br>
+      <p>What excites me specifically is the GPU infrastructure work and the edge-to-core AI deployment challenge. Training foundation models optimised for India's connectivity landscape is a completely different problem from what most companies are doing, and I want to be part of the team solving it.</p><br>
+      <p>I also appreciate that ESDS values learning velocity over CGPA. I've shipped 20+ projects across AI, full-stack, and mobile — not because a professor assigned them, but because I was hungry to build."</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="company-row"><span class="co-badge co-vidu">VuduCom</span></div>
+    <h3>Why do you want to join VuduCom?</h3>
+    <div class="answer-box">
+      <p>"Video commerce is genuinely the next frontier for brand marketing — brands need content that converts, not just content that looks good, and VuduCom is building exactly that.</p><br>
+      <p>The React Native role interests me specifically because mobile-first video experiences are where user engagement actually happens. I've built React Native apps with offline-first architecture and real-time cloud sync — and I'm learning from a co-founder who has 20+ shipped mobile apps. Working at VuduCom means shipping features for a real product used by real brands, which is a different challenge than solo projects.</p><br>
+      <p>I want to get fast at mobile development, and working in a product team that ships constantly is the fastest way to do that."</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="company-row"><span class="co-badge co-emp">Empower</span></div>
+    <h3>Why do you want to join Empower?</h3>
+    <div class="answer-box">
+      <p>"Empower operates at a scale that genuinely matters — financial services infrastructure that millions of people depend on. That kind of reliability and quality standard is something I want to learn firsthand.</p><br>
+      <p>What stands out to me is the Engineering culture — the focus on SDLC discipline, code quality, and documentation. These are things I've tried to build into my own projects — I write API documentation, I do PR reviews at CatCatchCode, I write technical documentation for Satsang Vachan. But doing this inside a professional engineering organisation with senior mentorship would accelerate that growth enormously.</p><br>
+      <p>The Education Assistance Program after 18 months also tells me this is a company that invests in its engineers' long-term growth, not just their output."</p>
+    </div>
+  </div>
+</div>
+
+<!-- WEAKNESS / FAILURE -->
+<div id="weakness" class="content">
+  <h2 class="section-title">Weakness & Failure Questions</h2>
+
+  <div class="intro-card">
+    <p>The worst answers: <strong>"I work too hard"</strong> or <strong>"I'm a perfectionist."</strong> Interviewers hear these 50 times a day. Give a real weakness with a real improvement action.</p>
+  </div>
+
+  <div class="card">
+    <span class="q-label">CLASSIC TRAP QUESTION</span>
+    <h3>What is your biggest weakness?</h3>
+    <div class="answer-box">
+      <p>"Honestly, I tend to go deep on problems before asking for help. When I'm debugging something, my instinct is to solve it myself first — which is usually good, but I've realised it can sometimes cost more time than it saves.</p><br>
+      <p>I've been working on this. When I build now, I set a personal time-box: if I haven't made progress in 45 minutes on a specific issue, I document what I've tried and reach out — whether that's Stack Overflow, documentation, or a peer. That shift has made me faster without losing the problem-solving habit I actually value."</p>
+    </div>
+    <div class="tip">This answer is credible, shows self-awareness, and demonstrates a specific fix. That's the formula for every weakness answer.</div>
+  </div>
+
+  <div class="card">
+    <span class="q-label">FOLLOW-UP</span>
+    <h3>Tell me about a time you failed.</h3>
+    <div class="answer-box">
+      <p>"When I first launched the Comfortable Stay platform, I didn't properly plan for data persistence — I used localStorage, which meant user data was lost every session refresh. Users couldn't rely on it.</p><br>
+      <p>The failure was that I shipped without thinking through the full user journey. I was so focused on building the features that I didn't step back and ask 'what does a real user session actually look like?'</p><br>
+      <p>That experience changed how I approach any new project now — I always map out the complete user flow and data lifecycle before writing the first line of code. ProjectHub, which I built after that, has proper MongoDB Atlas persistence, Cloudinary file storage, and full session management. That failure was directly responsible for me being more systematic."</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="q-label">TRICKY VARIANT</span>
+    <h3>What would your teammates say is your weakness?</h3>
+    <div class="answer-box">
+      <p>"My co-founder would probably say I sometimes get too focused on getting the backend architecture perfect before moving to the next feature — I care a lot about clean code and proper structure. He's more ship-first, iterate-later. Honestly, we balance each other well — his pace keeps us shipping, my attention to structure keeps things maintainable long-term.</p><br>
+      <p>But I've learned to pick my battles — not every piece of code needs to be perfect on the first pass. Good enough and shipped beats perfect and delayed."</p>
+    </div>
+  </div>
+</div>
+
+<!-- SALARY TAB -->
+<div id="salary" class="content">
+  <h2 class="section-title">Salary, Logistics & Tricky Questions</h2>
+
+  <div class="card">
+    <span class="q-label">SALARY NEGOTIATION</span>
+    <h3>What are your salary expectations?</h3>
+    <div class="answer-box">
+      <p>"I've done my research on fresher compensation for this role and location. I'm flexible and open to your standard band for this position — I'm more focused on the role and growth opportunity than maximising the starting number.</p><br>
+      <p>That said, if you could share the range you have budgeted, I can let you know if it aligns with my expectations."</p>
+    </div>
+    <div class="tip">For Empower (5 LPA fixed), Clara (negotiable), VuduCom (up to 6 LPA) — these are already published. If you know the number, you can say "I understand the band is around X — that works for me at this stage."</div>
+  </div>
+
+  <div class="card">
+    <span class="q-label">LOGISTICS</span>
+    <h3>Are you okay with the US shift timings? (Clara AI — 6:30 PM to 3:30 AM)</h3>
+    <div class="answer-box">
+      <p>"Yes, absolutely. I've looked into it and I've adjusted my sleep schedule before during project sprints and exam prep — I'm a night person by habit actually. The US shift suits the kind of deep work I enjoy, and collaborating with a North American team is genuinely exciting from a learning perspective."</p>
+    </div>
+    <div class="warn">Don't say "I'll try to adjust" — say "yes, I'm comfortable with it." Hesitation here is a red flag for Clara specifically.</div>
+  </div>
+
+  <div class="card">
+    <span class="q-label">COMMITMENT TEST</span>
+    <h3>Do you have any other offers or are you interviewing elsewhere?</h3>
+    <div class="answer-box">
+      <p>"I'm in the process of exploring a few opportunities — it's my final placement season. But I want to be honest: [this company] is genuinely one I'm most excited about because of [specific reason]. I'm not playing the offer game — I'm looking for the right fit."</p>
+    </div>
+    <div class="tip">Never lie about other offers. But don't undersell yourself either — "I'm only talking to you" signals desperation.</div>
+  </div>
+
+  <div class="card">
+    <span class="q-label">COMMITMENT TEST</span>
+    <h3>Will you continue running CatCatchCode if you join us?</h3>
+    <div class="answer-box">
+      <p>"CatCatchCode runs mostly asynchronously now — content is pre-planned, the platform is built, and my co-founder handles a lot of the day-to-day. It wouldn't affect my work here at all.</p><br>
+      <p>If there was ever a genuine conflict, the job comes first — I'm a professional first. CatCatchCode is a passion project that makes me better at my job, not a distraction from it."</p>
+    </div>
+  </div>
+</div>
+
+<!-- QUESTIONS TO ASK -->
+<div id="ask-them" class="content">
+  <h2 class="section-title">Questions to Ask the Interviewer</h2>
+
+  <div class="intro-card">
+    <p>Always ask 2–3 questions at the end. <strong>Asking nothing signals disinterest.</strong> Asking great questions signals you've thought seriously about the role.</p>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <div class="section-label">For technical / growth culture</div>
+      <div class="card"><p style="font-size:14px;color:#334155;">"What does the onboarding look like for a fresher engineer — how quickly would I be working on production code?"</p></div>
+      <div class="card"><p style="font-size:14px;color:#334155;">"What does a typical growth path look like for engineers who join at this level?"</p></div>
+      <div class="card"><p style="font-size:14px;color:#334155;">"What's the tech stack currently and are there areas where the team is actively evaluating new tools?"</p></div>
+      <div class="card"><p style="font-size:14px;color:#334155;">"How does the team handle code reviews — is there a culture of knowledge-sharing through PRs?"</p></div>
+    </div>
+    <div>
+      <div class="section-label">For culture / team fit</div>
+      <div class="card"><p style="font-size:14px;color:#334155;">"What does a high-performing engineer look like on this team — what separates good from great here?"</p></div>
+      <div class="card"><p style="font-size:14px;color:#334155;">"What's the biggest challenge the team is currently working through that someone in this role would help with?"</p></div>
+      <div class="card"><p style="font-size:14px;color:#334155;">"Is there anything in my background or resume that you'd want me to address or clarify?"</p></div>
+      <div class="card" style="background:#fffbeb;border-color:#fbbf24;"><p style="font-size:14px;color:#92400e;"><strong>Power question:</strong> "What does success look like for this role at the 6-month mark?"</p></div>
+    </div>
+  </div>
+
+  <div class="warn" style="margin-top:8px;">Never ask about salary, leaves, or WFH policy in the HR round unless they bring it up first. It signals your priorities are wrong.</div>
+</div>
+
+<script>
+function show(id) {
+  document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
